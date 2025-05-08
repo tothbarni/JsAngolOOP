@@ -16,7 +16,7 @@
     ></script>
     <script type="module" src="index.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Tóth Barnabás</title>
+    <title>Angol nyelvtanuló alkalmazás</title>
   </head>
   <body>
     <main>
@@ -25,25 +25,38 @@
       </header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Válaszd ki!</a>
+                <a class="nav-link" href="#">Válaszd ki!</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Egészítsd ki!</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Rakd sorba!</a>
+                <a class="nav-link" href="#">Rakd sorba!</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      
+      <div class="mt-4 mb-4">
+        <h2>Egészítsd ki a mondatokat a megfelelő szavakkal!</h2>
+        <p>Válaszolj minden kérdésre, az eredményt a válaszadás után láthatod!</p>
+      </div>
+      
       <div class="tarolo">
         <!-- Itt lesznek a kérdések -->
       </div>
-
+      
+      <div class="pontszam-container">
+        <!-- Itt jelenik meg a pontszám -->
+      </div>
+      
     </main>
   </body>
 </html>

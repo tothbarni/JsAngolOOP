@@ -14,12 +14,18 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    margin-bottom: 30px;
 }
 
 .kerdes{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 25px;
     border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.kerdes:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 button{
@@ -27,11 +33,53 @@ button{
     border: none;
     color: white;
     border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(0, 123, 205);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+input {
+    border: 1px solid #ddd;
+    padding:.4rem;
+    border-radius: 5px;
+    margin: 0 .3rem;
+}
+
+input:disabled {
+    background-color: #f8f8f8;
+    border-color: #ccc;
+}
+
+.pontszam-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.eredmeny {
+    font-size: 1.1rem;
+}
+
+.eredmeny h3 {
+    color: #444;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 680px) {
     body{
-        width: 100%;
+        width: 95%;
     }
     .tarolo{
         grid-template-columns: 1fr;
